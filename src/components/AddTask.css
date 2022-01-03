@@ -1,0 +1,106 @@
+.task__add {
+    position: relative;
+    margin: 0 20px;
+    width: auto;
+}
+
+h2.task__add-header {
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+input.task__input {
+    background-color: rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    min-height: 55px;
+}
+
+.date-area {
+    margin: 10px 0;
+}
+
+.task__add-header {
+    margin-bottom: 10px;
+}
+
+.task__add-header-choise {
+    margin: 10px 0;
+}
+
+.date-area {
+    width: 100%;
+    display: flex;
+    /* background-color: rebeccapurple; */
+}
+
+.calendar,
+.type__task-priority {
+    align-self: center;
+    width: 60px;
+    height: 35px;
+    background-color: #5051E6;
+    border-radius: 18px;
+    margin: 0 10px 0 0;
+}
+
+.calendar i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.task__date {
+    flex-grow: 1;
+}
+
+input.task__input,
+input.task__input[type="date"]::-webkit-calendar-picker-indicatior {
+    color: var(--fontColor)
+}
+
+.type__task {
+    display: flex;
+}
+
+.type__task-priority:nth-child(1) {
+    background-color: #35DF91;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.type__task-priority:nth-child(2) {
+    background-color: #F47960;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.type__task-priority.active {
+    opacity: 1;
+}
+
+.type__task-priority p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+button.btn-add {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#FAC762, #E6A550);
+    border-radius: 10px;
+    margin: 10px auto;
+    border: none;
+    color: var(--fontColor);
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+}

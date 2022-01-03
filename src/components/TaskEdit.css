@@ -1,0 +1,76 @@
+.popup__task {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.018);
+    backdrop-filter: blur(10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* top: 0;
+    left: 0; */
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    bottom: 0%;
+    left: 50%;
+    transition: pop 2.5s;
+    animation: pop 2.5s both;
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    60% {
+        bottom: 24%;
+    }
+
+    80% {
+        bottom: 24%;
+    }
+
+    81% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 24%;
+    }
+}
+
+.popup__task_input {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form input {
+    margin: 5px 0;
+}
+
+.changeText {
+    background: rgba(255, 255, 255, 0.118);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: var(--fontColor)
+}
+
+.btn_save {
+    background: rgba(255, 255, 255, 0.018);
+    backdrop-filter: blur(10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--fontColor);
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}

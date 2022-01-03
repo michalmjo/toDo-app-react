@@ -1,0 +1,55 @@
+div.app {
+    height: 100vh;
+    overflow: hidden;
+}
+
+div.circle {
+    position: absolute;
+    z-index: -1;
+    transform: translate(-20%, -40%);
+}
+
+div.smallCircle_one,
+div.smallCircle_two {
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(#0E0F5C, #1C1DB8);
+    transform: translate(600%, 120%);
+}
+
+div.smallCircle_two {
+    width: 40px;
+    height: 40px;
+    transform: translate(225%, 305%);
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 30px 0 0 35px
+}
+
+h2.header_title {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin: 15px 0 0 35px;
+    width: 30%;
+}
+
+header {
+    /* background-color: red; */
+    min-height: 20%;
+}
+
+@media screen and (min-width: 966px) {
+    div.app {
+        max-width: 966px;
+        margin: 0 auto;
+        overflow: hidden;
+        /* position: relative; */
+    }
+}

@@ -1,0 +1,81 @@
+.task {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    width: 100%;
+    min-height: 55px;
+
+}
+
+
+.task_area {
+    min-height: 100%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 15px;
+    font-size: 1.4rem;
+}
+
+.text_area,
+.icon_area {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    min-height: 100%;
+    font-weight: bold;
+}
+
+.text_area {
+    width: 70%;
+}
+
+.text_area div p span {
+    font-weight: lighter;
+}
+
+
+.task i {
+    padding: 0 10px;
+}
+
+.btn_ico {
+    background: none;
+    color: var(--fontColor);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_ico:hover .fa-trash {
+    color: #F47960ed;
+}
+
+.btn_ico:hover .fa-edit {
+    color: #E6A550;
+}
+
+.btn_ico:hover .fa-check {
+    color: #35DF91;
+}
+
+p.message {
+    margin: 10px 10%;
+    text-align: center;
+    color: crimson;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 966px) {
+    .task_area {
+        width: 100%;
+    }
+}

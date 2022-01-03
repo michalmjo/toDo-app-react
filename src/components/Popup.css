@@ -1,0 +1,56 @@
+.popup {
+    position: fixed;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.018);
+    backdrop-filter: blur(10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* top: 0;
+    left: 0; */
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top: 20%;
+    left: 50%;
+    transition: all-in 2.5s;
+    animation: all-in 2.5s both;
+}
+
+@keyframes all-in {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    60% {
+        top: 24%;
+    }
+
+    80% {
+        top: 24%;
+    }
+
+    81% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.popup__message {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup__message p {
+    font-size: 1.2rem;
+}
